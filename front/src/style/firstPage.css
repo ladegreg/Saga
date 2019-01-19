@@ -1,0 +1,52 @@
+.logo {
+}
+
+.logo h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #00ff00;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 3.5rem;
+  margin: auto;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-navigation_item {
+  margin: 0 0 0 1.5rem;
+  font-size: 1.2rem;
+}
+
+.main-navigation_item ul {
+  display: flex;
+  list-style: none;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation_item li {
+  margin: 0 1.4rem;
+}
+
+.main-navigation_item a {
+  text-decoration: none;
+  color: #00c000;
+}
+
+.main-navigation_item a:hover,
+.main-navigation_item a:active,
+.main-navigation_item a.active {
+  color: #00ff00;
+}
+
+.start {
+  color: #00ff00;
+  margin: 1rem;
+}
