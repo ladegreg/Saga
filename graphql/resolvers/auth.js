@@ -36,9 +36,11 @@ module.exports = {
       throw err;
     }
   },
-  login: async ({email, password}) => {
+  login: async ({nick, email, password}) => {
     const user = await User.findOne({email: email});
     if (!user) {
+      await User.findOne({email: nick});
+    } if (!user) {
       throw new Error('Niema takiego urzytkownika lub nieprawidłowe hasło');
     }
     const isEqual = await bcrypt.compare(password, user.password);

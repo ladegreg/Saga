@@ -7,7 +7,6 @@ import MainNavigation from './components/mainNavigation';
 import Start from './components/start';
 import Max from './components/max';
 import Logowanie from './components/logowanie';
-//import Gra from '../Gra/gra';
 
 
 class Logo extends Component {
@@ -25,7 +24,6 @@ class FirstPage extends Component {
     return (
       <BrowserRouter className="App">
         <React.Fragment>
-
               <Logo/>
               <MainNavigation/>
               <main className="main-content">
