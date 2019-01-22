@@ -7,6 +7,7 @@ const mainNavigation = props =>(
       <ul>
         <li><NavLink to="/start">Start</NavLink></li>
         <li><NavLink to="/max">Max $</NavLink></li>
+        <li><NavLink to="/logowanie">Logowanie $</NavLink></li>
       </ul>
     </nav>
   </header>

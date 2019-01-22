@@ -6,6 +6,8 @@ import '../../style/firstPage.css';
 import MainNavigation from './components/mainNavigation';
 import Start from './components/start';
 import Max from './components/max';
+import Logowanie from './components/logowanie';
+//import Gra from '../Gra/gra';
 
 
 class Logo extends Component {
@@ -31,6 +33,7 @@ class FirstPage extends Component {
                   <Redirect from="/" to="/start" exact />
                   <Route path="/start" component={Start} />
                   <Route path="/max" component={Max} />
+                  <Route path="/logowanie" component={Logowanie} />
                 </Switch>
                 </main>
         </React.Fragment>

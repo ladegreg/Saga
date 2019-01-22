@@ -1,0 +1,7 @@
+{
+  "env": {
+    "MONGO_USER": "kolony19",
+    "MONGO_PASSWORD": "nzq1IzemQ3OOemic",
+    "MONGO_DB": "kolony2019"
+  }
+}
