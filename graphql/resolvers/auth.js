@@ -37,15 +37,13 @@ module.exports = {
     }
   },
   login: async ({nick, email, password}) => {
-    const user = await User.findOne({email: email});
+    const user = await User.findOne({email: email}) || await User.findOne({nick: nick});
     if (!user) {
-      await User.findOne({email: nick});
-    } if (!user) {
-      throw new Error('Niema takiego urzytkownika lub nieprawidłowe hasło');
+      throw new Error('1Niema takiego urzytkownika lub nieprawidłowe hasło');
     }
     const isEqual = await bcrypt.compare(password, user.password);
     if (!isEqual) {
-      throw new Error('Niema takiego urzytkownika lub nieprawidłowe hasło');
+      throw new Error('2Niema takiego urzytkownika lub nieprawidłowe hasło');
     }
     const token = jwt.sign({userId: user.id, email: user.email}, 'somesupersecretkey', {
       expiresIn: '1h'
