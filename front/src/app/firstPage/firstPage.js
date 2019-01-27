@@ -1,23 +1,13 @@
 import React, {Component} from 'react';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 
-
-import '../../style/firstPage.css';
-import MainNavigation from './components/mainNavigation';
+import Logo from './components/logo/logo';
+import Logowanie from './components/logowanie/logowanie';
+import MainNavigation from './components/navig/mainNavigation';
 import Start from './components/start';
 import Max from './components/max';
-import Logowanie from './components/logowanie';
 
-
-class Logo extends Component {
-  render() {
-    return (
-      <div className="logo">
-        <h1>Kolony 2019</h1>
-      </div>
-    )
-  }
-}
+import './firstPage.css';
 
 class FirstPage extends Component {
   render() {
@@ -25,7 +15,9 @@ class FirstPage extends Component {
       <BrowserRouter className="App">
         <React.Fragment>
               <Logo/>
+              <Logowanie/>
               <MainNavigation/>
+
               <main className="main-content">
                 <Switch>
                   <Redirect from="/" to="/start" exact />

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 
 
 import FirstPage from './app/firstPage/firstPage';
 import Gra from './app/gra/gra';
 import AuthContext from './app/context/auth-context';
 
-import './style/App.css';
+import './App.css';
 
 class App extends Component {
 

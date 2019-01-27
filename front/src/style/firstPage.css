@@ -1,27 +1,78 @@
 .logo {
+  align-items: center;
 }
 
 .logo h1 {
   font-size: 4rem;
   font-weight: 900;
-  color: #00ff00;
+  color: rgba(0, 255, 0, 1);
 }
 
+.boxLogowanie,
 .main-navigation {
   display: flex;
   flex-direction: row;
   width: 70%;
   height: 3.5rem;
-  margin: auto;
+  margin: 0.25rem auto;
   padding: 0 1rem;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.40);
-  border: 2px solid #00ff00;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(0, 255, 0, 1);
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.30) 2px 2px;
+  box-shadow: rgba(255, 255, 255, 0.3) 2px 2px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 2rem;
+  color: rgba(0, 255, 0, 1);
+  padding: 0.2rem 0;
+  margin: 0.2rem 0;
 
 }
+
+.form-control,
+.form-actions {
+  display: flex;
+  flex-direction: row;
+}
+.form-control label {
+  align-self: center;
+  margin: 0 5px;
+}
+
+.form-control input{
+  font-size: 1rem;
+  padding: 5px;
+  width: 60%;
+}
+
+.form-actions {
+  font-size: 1rem;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+.form-control input {
+  border-radius: 5px;
+}
+
+.form-actions button {
+  cursor: pointer;
+  background: rgba(0, 255, 0, 1);
+  border: 1px solid rgba(0, 56, 255, 1);
+  box-shadow: rgba(255, 255, 255, 0.3) 2px 2px;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
 
 .main-navigation_item {
   margin: 0 0 0 1.5rem;
@@ -42,21 +93,22 @@
 
 .main-navigation_item a {
   text-decoration: none;
-  color: #00c000;
+  color: rgba(0, 255, 0, 1);
 }
 
 .main-navigation_item a:hover,
 .main-navigation_item a:active,
 .main-navigation_item a.active {
-  color: #00ff00;
+  color: rgba(255, 255, 255, 1);
 }
 
 .start {
-  color: #00ff00;
-  margin: 3rem 1.5rem;
+  color: rgba(0, 255, 0, 1);
+  margin:  1.5rem auto;
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.40);
-  border: 2px solid #00ff00;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(0, 255, 0, 1);
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.30) 2px 2px;
+  box-shadow: rgba(255, 255, 255, 0.3) 2px 2px;
+  width: 70%;
 }

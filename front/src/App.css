@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./img/tlo780.jpg");
+  background-position: center top;
+}
+
+.App {
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-width: 360px;
+}
+
+@media (min-width: 770px) {
+  body {
+    background-image: url("./img/tlo1920.jpg");
+  }
+}

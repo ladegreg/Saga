@@ -1,0 +1,42 @@
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 3.5rem;
+  margin: 0.25rem auto;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(0, 255, 0, 1);
+  border-radius: 5px;
+  box-shadow: rgba(255, 255, 255, 0.3) 2px 2px;
+}
+
+.main-navigation_item {
+  margin: 0 0 0 1.5rem;
+  font-size: 1.2rem;
+}
+
+.main-navigation_item ul {
+  display: flex;
+  list-style: none;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation_item li {
+  margin: 0 1.4rem;
+}
+
+.main-navigation_item a {
+  text-decoration: none;
+  color: rgba(0, 255, 0, 1);
+}
+
+.main-navigation_item a:hover,
+.main-navigation_item a:active,
+.main-navigation_item a.active {
+  color: rgba(255, 255, 255, 1);
+}
